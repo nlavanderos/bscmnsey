@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+table,
+td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+td {
+  width: 48px;
+  height: 48px;
+}
+
+@mixin button-color($bg) {
+  color: #fff;
+  background-color: $bg;
+  border: 1px solid $bg;
+  &:hover {
+    color: #fff;
+    background: darken($bg, 6%);
+    transition: all 0.2s ease;
+    border: 5px solid darken($bg, 5%);
+  }
+
+  &:active {
+    color: #fff;
+    background: darken($bg, 6%);
+    border: 40px solid darken($bg, 5%);
+  }
+  &:focus {
+    color: #fff;
+  }
+}
+
+.btn-blue {
+  @include button-color(#3498db);
+}
+
+h1 {
+  font-family: "Poiret One", cursive;
+  font-size: 50px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.numeros {
+  font-family: "Poiret One", cursive;
+  font-size: 18px;
+  margin-bottom: auto;
+  font-weight: bold;
+}
+
+div {
+  text-align: center;
+}
+
+.bomba,
+.bandera {
+  width: 24px;
+  height: 24px;
+}
+
+.div-boton-reinicio {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-blue {
+  height: 50px;
+  width: 120px;
+  font-family: "Poiret One", cursive;
+  font-size: 25px;
+  margin-top: 70px;
+}

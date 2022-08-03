@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+  "include": [
+    "./e2e/*.ts"
+  ],
+  "compilerOptions": {
+    "sourceMap": false,
+    "types": [
+      "cypress",
+      "jasmine",
+      "node"
+    ]
+  }
+}
